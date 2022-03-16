@@ -29,7 +29,7 @@ const App = () => {
         return (
             <div>
                 <h1>website loading...</h1>
-                <button onCLick={() => setLoaded(true)}>load website!></button>
+                <button onCLick={() => setLoaded(true)}>load website!</button>
             </div>
         )
     }
