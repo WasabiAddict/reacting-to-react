@@ -1,8 +1,11 @@
 import React from 'react';
 
-const Greeter = () => {
+
+const Greeter = props => {
     return (
-        <h1>{props.phrase} {props.name}!</h1>
+        <div>
+            <h1>{props.phrase} {props.name}</h1>
+        </div>
     )
 }
 
