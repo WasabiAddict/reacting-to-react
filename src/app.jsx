@@ -1,10 +1,16 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Greeter from "./components/Greeter";
 
 const App = () => {
     const [username, setUsername] = useState("")
-    comst [loaded, setLoaded] = useState(false);
+    const [loaded, setLoaded] = useState(false);
     console.log(username) //""
+
+    useEffect(() => {
+            setTimeout(() => {
+                setLoaded(true)
+            }, 3000);
+    }, []);
 
     if(loaded) {
         return (
